@@ -4,7 +4,6 @@
         "clean": "npx hardhat --config hardhat.export.ts clean",
         "compile": "npx hardhat --config hardhat.export.ts compile",
         "typechain": "npx hardhat --config hardhat.export.ts typechain",
-        "coverage": "npm run clean && npm run typechain && hh --config hardhat.export.ts coverage",
         "gen:sdk": "npx hardhat exportSDK --network",
         "list": "npx hardhat listDeploy --network",
         "size": "npx hardhat size-contracts",
@@ -16,7 +15,8 @@
         "lint:ts": "eslint . --fix --ext ts",
         "lint:sol": "prettier --write \"./contracts/**/*.sol\" && solhint \"./contracts/**/*.sol\" --fix",
         "lint": "npm run lint:ts && npm run lint:sol",
-        "contracts_size": "npm run compile && NODE_ENV=hardhat hardhat size-contracts"
+        "contracts_size": "npm run compile && NODE_ENV=hardhat hardhat size-contracts",
+        "coverage": "rm -rf coverage && forge coverage  --no-match-coverage \"(test|mock|node_modules|script|Fast)\" --report lcov --report summary --ir-minimum  --no-match-test testFork"
     },
     "devDependencies": {
         "@boringcrypto/boring-solidity": "https://github.com/boringcrypto/BoringSolidity#e0ff4a7771edfa09a90694c4e0f891938cf62a43",
