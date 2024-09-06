@@ -6,7 +6,7 @@ import {
     MagnetarModule,
     MagnetarCall,
     IMagnetarModuleExtender
-} from "tapioca-periph/interfaces/periph/IMagnetar.sol";
+} from "tap-utils/interfaces/periph/IMagnetar.sol";
 import {MagnetarBaseTest, Magnetar} from "test/btt/MagnetarBaseTest.sol";
 import {MagnetarStorage} from "contracts/Magnetar/MagnetarStorage.sol";
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.22;
 
-import {IMagnetarModuleExtender, MagnetarCall} from "tapioca-periph/interfaces/periph/IMagnetar.sol";
+import {IMagnetarModuleExtender, MagnetarCall} from "tap-utils/interfaces/periph/IMagnetar.sol";
 
 contract MagnetarExtenderMock is IMagnetarModuleExtender {
     function isValidActionId(uint8 actionId) external view returns (bool) {

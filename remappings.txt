@@ -14,3 +14,4 @@ hardhat-deploy/=node_modules/hardhat-deploy/
 hardhat/=node_modules/hardhat/
 prb-math/=node_modules/prb-math/
 solady/=node_modules/solady/
+permitc/=lib/tap-utils/lib/PermitC/src/

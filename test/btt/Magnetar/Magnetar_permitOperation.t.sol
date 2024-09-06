@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.22;
 
-import {ERC20PermitApprovalMsg, ERC20PermitStruct} from "tapioca-periph/interfaces/periph/ITapiocaOmnichainEngine.sol";
-import {MagnetarAction, MagnetarCall} from "tapioca-periph/interfaces/periph/IMagnetar.sol";
+import {ERC20PermitApprovalMsg, ERC20PermitStruct} from "tap-utils/interfaces/periph/ITapiocaOmnichainEngine.sol";
+import {MagnetarAction, MagnetarCall} from "tap-utils/interfaces/periph/IMagnetar.sol";
 import {MagnetarBaseTest, Magnetar} from "test/btt/MagnetarBaseTest.sol";
 import {MagnetarStorage} from "contracts/Magnetar/MagnetarStorage.sol";
 

@@ -4,18 +4,18 @@ pragma solidity 0.8.22;
 /**
  * Core
  */
-import {TapiocaOmnichainEngineHelper} from "contracts/tapiocaOmnichainEngine/extension/TapiocaOmnichainEngineHelper.sol";
-import {ERC20PermitApprovalMsg, ERC20PermitStruct} from "tapioca-periph/interfaces/periph/ITapiocaOmnichainEngine.sol";
-import {TapiocaOmnichainExtExec} from "contracts/tapiocaOmnichainEngine/extension/TapiocaOmnichainExtExec.sol";
+import {TapiocaOmnichainEngineHelper} from "tap-utils/tapiocaOmnichainEngine/extension/TapiocaOmnichainEngineHelper.sol";
+import {ERC20PermitApprovalMsg, ERC20PermitStruct} from "tap-utils/interfaces/periph/ITapiocaOmnichainEngine.sol";
+import {TapiocaOmnichainExtExec} from "tap-utils/tapiocaOmnichainEngine/extension/TapiocaOmnichainExtExec.sol";
 import {MagnetarCollateralModule} from "tapioca-periph/Magnetar/modules/MagnetarCollateralModule.sol";
 import {MagnetarYieldBoxModule} from "contracts/Magnetar/modules/MagnetarYieldBoxModule.sol";
 import {MagnetarOptionModule} from "contracts/Magnetar/modules/MagnetarOptionModule.sol";
 import {MagnetarMintModule} from "contracts/Magnetar/modules/MagnetarMintModule.sol";
 import {MagnetarBaseModule} from "contracts/Magnetar/modules/MagnetarBaseModule.sol";
-import {IMagnetarHelper} from "contracts/interfaces/periph/IMagnetarHelper.sol";
+import {IMagnetarHelper} from "tap-utils/interfaces/periph/IMagnetarHelper.sol";
 import {MagnetarHelper} from "contracts/Magnetar/MagnetarHelper.sol";
-import {Pearlmit, IPearlmit} from "contracts/pearlmit/Pearlmit.sol";
-import {Cluster, ICluster} from "contracts/Cluster/Cluster.sol";
+import {Pearlmit, IPearlmit} from "tap-utils/pearlmit/Pearlmit.sol";
+import {Cluster, ICluster} from "tap-utils/Cluster/Cluster.sol";
 import {Magnetar} from "contracts/Magnetar/Magnetar.sol";
 
 /**
@@ -25,7 +25,7 @@ import {MagnetarExtenderMock} from "test/mocks/MagnetarExtenderMock.sol";
 import {ToeTokenReceiverMock} from "test/mocks/ToeTokenMock/ToeTokenReceiverMock.sol";
 import {ToeTokenSenderMock} from "test/mocks/ToeTokenMock/ToeTokenSenderMock.sol";
 import {ToeTokenMock} from "test/mocks/ToeTokenMock/ToeTokenMock.sol";
-import {TestHelper} from "test/LZSetup/TestHelper.sol";
+import {TestHelper} from "tap-utils/../test/LZSetup/TestHelper.sol";
 
 contract MagnetarBaseTest is TestHelper {
     // Address mapping
